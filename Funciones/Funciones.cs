@@ -18,25 +18,27 @@ namespace Funciones
             return (sueldoBruto * porcentaje) / 100;
         }
 
-        public static Boolean eliminarUsuario(int id, string nombre)
+        public static int MayorMenor(int x, int y)
         {
-            return true;
+            if (x > y)
+            {
+                return x;
+            }
+            else if (x < y)
+            {
+                return y;
+            }
+            else
+            {
+                return 0;
+            }
+
         }
 
         public static void imprimirTexto(string texto)
         {
 
         }
-
-        public static void insertarNoticia(int id_noticia, DateTime fecha)
-        {
-
-        }
-
-        public static int CambioValor(ref int a, int b)
-        {
-            a = 1;
-            return b;
-        }
+      
     }
 }
